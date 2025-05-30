@@ -21,7 +21,7 @@ jobs:
         tenant-id: ${{ secrets.AZURE_TENANT_ID }}
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         enable-AzPSSession: true
-        auth-type: ID_TOKEN
+        auth-type: SERVICE_PRINCIPAL
 
     - name: Deploy Storage Account
       uses: azure/arm-deploy@v1
